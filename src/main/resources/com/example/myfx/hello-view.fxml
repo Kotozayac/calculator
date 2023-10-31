@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="744.0" prefWidth="974.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="testField" promptText="adg" />
+   <Accordion />
+    <Button fx:id="testButton1" onAction="#onButtonClick1" text="1" />
+    <Button fx:id="testButton2" onAction="#onButtonClick2" text="2" />
+    <Button fx:id="testButton3" onAction="#onButtonClick3" text="3" />
+    <Button fx:id="testButton4" onAction="#onButtonClick4" text="4" />
+    <Button fx:id="testButton5" onAction="#onButtonClick5" text="5" />
+    <Button fx:id="testButton6" onAction="#onButtonClick6" text="6" />
+    <Button fx:id="testButton7" onAction="#onButtonClick7" text="7" />
+    <Button fx:id="testButton8" onAction="#onButtonClick8" text="8" />
+    <Button fx:id="testButton9" onAction="#onButtonClick9" text="9" />
+    <Button fx:id="testButton0" onAction="#onButtonClick0" text="0" />
+    <Button fx:id="sumButton" onAction="#onSumButtonClick" text="+" />
+</VBox>
