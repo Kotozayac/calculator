@@ -5,6 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class HelloController {
+
+    public double firstNr;
+
     @FXML
     private Button testButton1;
 
@@ -61,7 +64,7 @@ public class HelloController {
     @FXML
     protected void onSumButtonClick() {
         String str = testField.getText();
-        double firstNr = Double.parseDouble(str);
+        firstNr = Double.parseDouble(str);
         testField.clear();
         testField.setText("+");
     }
