@@ -10,17 +10,74 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <TextField fx:id="testField" promptText="adg" />
+   <TextField fx:id="testField" />
    <Accordion />
-    <Button fx:id="testButton1" onAction="#onButtonClick1" text="1" />
-    <Button fx:id="testButton2" onAction="#onButtonClick2" text="2" />
-    <Button fx:id="testButton3" onAction="#onButtonClick3" text="3" />
-    <Button fx:id="testButton4" onAction="#onButtonClick4" text="4" />
-    <Button fx:id="testButton5" onAction="#onButtonClick5" text="5" />
-    <Button fx:id="testButton6" onAction="#onButtonClick6" text="6" />
-    <Button fx:id="testButton7" onAction="#onButtonClick7" text="7" />
-    <Button fx:id="testButton8" onAction="#onButtonClick8" text="8" />
-    <Button fx:id="testButton9" onAction="#onButtonClick9" text="9" />
-    <Button fx:id="testButton0" onAction="#onButtonClick0" text="0" />
-    <Button fx:id="sumButton" onAction="#onSumButtonClick" text="+" />
+    <Button fx:id="testButton1" onAction="#onButtonClick1" text="1">
+      <VBox.margin>
+         <Insets right="300.0" />
+      </VBox.margin></Button>
+    <Button fx:id="testButton2" onAction="#onButtonClick2" text="2">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton3" onAction="#onButtonClick3" text="3">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton4" onAction="#onButtonClick4" text="4">
+      <VBox.margin>
+         <Insets right="300.0" />
+      </VBox.margin></Button>
+    <Button fx:id="testButton5" onAction="#onButtonClick5" text="5">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton6" onAction="#onButtonClick6" text="6">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton7" onAction="#onButtonClick7" text="7">
+      <VBox.margin>
+         <Insets right="300.0" />
+      </VBox.margin></Button>
+    <Button fx:id="testButton8" onAction="#onButtonClick8" text="8">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton9" onAction="#onButtonClick9" text="9">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="testButton0" onAction="#onButtonClick0" text="0">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+    <Button fx:id="sumButton" onAction="#onSumButtonClick" text="+">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <Button fx:id="minusButton" onAction="#onMinusButtonClick" text="-">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </Button>
+   <Button fx:id="multiplyButton" onAction="#onMultiplyButtonClick" text="*">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </Button>
+   <Button fx:id="divideButton" onAction="#onDivideButtonClick" text="/">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </Button>
+    <Button fx:id="equalsButton" onAction="#onEqualsButtonClick" text="=">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <Button fx:id="clearButton" onAction="#onClearButtonClick" text="Clear">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </Button>
 </VBox>

@@ -42,6 +42,8 @@ public class HelloController {
     private TextField testField;
 
     @FXML
+    protected void onClearButtonClick() { testField.clear(); }
+    @FXML
     protected void onButtonClick1() { testField.appendText("1"); }
     @FXML
     protected void onButtonClick2() { testField.appendText("2"); }
@@ -67,5 +69,47 @@ public class HelloController {
         firstNr = Double.parseDouble(str);
         testField.clear();
         testField.setText("+");
+    }
+    @FXML
+    protected void onMinusButtonClick() {
+        String str = testField.getText();
+        firstNr = Double.parseDouble(str);
+        testField.clear();
+        testField.setText("-");
+    }
+    @FXML
+    protected void onMultiplyButtonClick() {
+        String str = testField.getText();
+        firstNr = Double.parseDouble(str);
+        testField.clear();
+        testField.setText("*");
+    }
+    @FXML
+    protected void onDivideButtonClick() {
+        String str = testField.getText();
+        firstNr = Double.parseDouble(str);
+        testField.clear();
+        testField.setText("/");
+    }
+    @FXML
+    protected void onEqualsButtonClick() {
+        String str = testField.getText();
+        String sign = Character.toString(str.charAt(0));
+        String string = str.substring(1);
+        double secNr = Double.parseDouble(string);
+        switch (sign) {
+            case "+":
+                testField.setText(Double.toString(firstNr + secNr));
+                break;
+            case "-":
+                testField.setText(Double.toString(firstNr - secNr));
+                break;
+            case "*":
+                testField.setText(Double.toString(firstNr * secNr));
+                break;
+            case "/":
+                testField.setText(Double.toString(firstNr / secNr));
+                break;
+        }
     }
 }
